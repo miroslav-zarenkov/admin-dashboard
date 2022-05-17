@@ -1,8 +1,143 @@
+:root {
+    --main-color: #06b6d4;
+    --secondary-color: #eef2ff;
+    --white-color: #fff;
+}
+
+html {
+    font-size: 10px;
+}
+
 * {
     margin: 0;
     padding: 0;
 }
 
-div {
+@font-face {
+    font-family: Ubuntu;
+    src: url("./fonts/ubuntu-regular-webfont.woff2") format("woff2");
+}
+
+div,
+nav {
     border: red 1px solid;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    height: 100vh;
+}
+
+.wrapper-left-column {
+    background-color: var(--main-color);
+    color: #fff;
+    display: grid;
+    grid-template-rows: 75px 300px 300px;
+    gap: 40px;
+}
+
+.wrapper-left-column>* {
+    padding: 20px;
+    font-family: Ubuntu, "Open Sans", sans-serif;
+}
+
+.wrapper-left-column div {
+    font-size: 4rem;
+    line-height: 4rem;
+}
+
+.wrapper-left-column li>i {
+    width: 45px;
+}
+
+.wrapper-left-column div>i {
+    width: 55px;
+}
+
+.wrapper-left-column ul {
+    list-style-type: none;
+    font-size: 2.5em;
+    line-height: 4rem;
+}
+
+
+.wrapper-right-column {
+    display: grid;
+    grid-template-rows: 1fr 5fr;
+}
+
+
+.wrapper-right-column>* {
+    padding: 20px;
+    font-family: Ubuntu, "Open Sans", sans-serif;
+    font-size: 2rem;
+}
+
+.wrapper-right-column-top {
+    display: grid;
+    grid-template-rows: 50% 50%;
+}
+
+.wrapper-right-column-top div {
+    margin: auto;
+    width: 100%;
+}
+
+.wrapper-right-column-top div>* {
+    align-self: center;
+    justify-self: center;
+}
+
+.wrapper-right-column-top div>input {
+    width: 500px;
+    height: 25px;
+    border-radius: 10px;
+    justify-self: start;
+    background-color: var(--secondary-color);
+    border: none;
+}
+
+.wrapper-right-column-top div:first-child {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 50px auto 50px 50px 200px;
+    gap: 10px;
+}
+
+.wrapper-right-column-top div:last-child {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 80px 1fr 100px 100px 100px;
+    gap: 20px;
+}
+
+.wrapper-right-column-top div:first-child img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.wrapper-right-column-top div:last-child img {
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    justify-self: right;
+}
+
+.wrapper-right-column-top div:last-child span {
+    justify-self: start;
+}
+
+button {
+    border: none;
+    border-radius: 50px;
+    background-color: var(--main-color);
+    color: var(--white-color);
+    font-size: 2rem;
+    padding: 5px 20px;
+}
+
+.wrapper-right-column-bottom {
+    background-color: var(--secondary-color);
 }
