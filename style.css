@@ -71,7 +71,7 @@ h5 {
     color: #fff;
     display: grid;
     grid-template-rows: 75px 300px 300px;
-    gap: 40px;
+    gap: 20px;
     grid-area: dashboard;
 }
 
@@ -90,7 +90,7 @@ h5 {
 
 .wrapper-left-column ul {
     list-style-type: none;
-    font-size: 2.5em;
+    font-size: 2.5rem;
     line-height: 4rem;
 }
 
@@ -177,7 +177,7 @@ button {
 .wrapper-right-column-bottom {
     background-color: var(--secondary-color);
     display: grid;
-    grid-template-columns: 1fr 400px;
+    grid-template-columns: 3fr 1fr;
     grid-template-rows: 1fr;
     box-shadow: var(--top-shadow);
 }
@@ -217,8 +217,8 @@ button {
 
 .trending {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: auto;
     background-color: var(--white-color);
     margin: 10px;
     border-radius: 10px;
@@ -329,8 +329,9 @@ button {
     }
 
     .wrapper-left-column {
-        /* display: none; */
         grid-auto-flow: row;
+        gap: 10px;
+        grid-template-rows: 65px 65px;
     }
 
     .wrapper {
@@ -338,5 +339,27 @@ button {
         grid-template-areas:
             "dashboard"
             "content";
+    }
+
+    .wrapper-left-column ul {
+        font-size: 2rem;
+    }
+
+    ul li {
+        display: inline;
+        margin-right: 15px;
+    }
+
+    .wrapper-left-column li>i {
+        font-size: 2rem;
+        width: 30px;
+    }
+
+    .wrapper-left-column div {
+        display: none;
+    }
+
+    nav {
+        align-self: center;
     }
 }
