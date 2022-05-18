@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Dashboard</title>
+    <link rel="shortcut icon" href="favicon.ico">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/a40fddaadc.js" crossorigin="anonymous"></script>
 </head>
@@ -42,11 +43,12 @@
                     <input type="search" name="search" id="search">
                     <i class="fa-solid fa-bell"></i>
                     <img src="./cute-frog-image-free-vector.jpeg" alt="user-picture">
-                    <span>Froggy Frog</span>
+                    <span class="name-span">Froggy Frog</span>
                 </div>
                 <div>
                     <img src="./cute-frog-image-free-vector.jpeg" alt="user-picture">
-                    <span>Hi there,<br>Froggy Frog (@mrfrog) </span>
+                    <div><span class="hi-span">Hi there,</span><br><span class="name-span">Froggy Frog (@mrfrog)</span>
+                    </div>
                     <button>New</button>
                     <button>Upload</button>
                     <button>Share</button>
@@ -59,49 +61,70 @@
                         <div class="card">
                             <div></div>
                             <div>
-                                <div>Heading</div>
-                                <div>Lorem</div>
-                                <div>Icons</div>
+                                <h4>Super Cool Project</h4>
+                                <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vestibulum,
+                                    neque varius molestie vestibulum, ipsum nisl gravida arcu, id tempor enim sapien
+                                    vehicula velit.</div>
+                                <div class="card-icons"><i class="fa-solid fa-star"></i><i
+                                        class="fa-solid fa-eye"></i><i class="fa-solid fa-code-fork"></i></div>
                             </div>
                         </div>
                         <div class="card">
                             <div></div>
                             <div>
-                                <div>Heading</div>
-                                <div>Lorem</div>
-                                <div>Icons</div>
+                                <h4>Less Cool Project</h4>
+                                <div>Aenean metus elit, varius in metus congue, condimentum efficitur risus. Nulla
+                                    vestibulum, ante ac ultrices dignissim, ante risus luctus sem, vel eleifend leo
+                                    nulla elementum metus. Phasellus ligula tellus, eleifend a nibh ac, tincidunt
+                                    tincidunt elit. Vivamus quis felis consequat, posuere est eget, efficitur dolor.
+                                    Donec id dictum nibh. In vulputate rhoncus nunc ac tincidunt. Aenean molestie nunc
+                                    ut tellus mollis pellentesque. Phasellus nisl ligula, imperdiet eget lectus sed,
+                                    malesuada congue lectus.</div>
+                                <div class="card-icons"><i class="fa-solid fa-star"></i><i
+                                        class="fa-solid fa-eye"></i><i class="fa-solid fa-code-fork"></i></div>
                             </div>
                         </div>
                         <div class="card">
                             <div></div>
                             <div>
-                                <div>Heading</div>
-                                <div>Lorem</div>
-                                <div>Icons</div>
+                                <h4>Impossible App</h4>
+                                <div>Aenean at luctus turpis. Nam tempus, eros et rutrum eleifend, arcu nisl varius
+                                    eros, et efficitur quam ligula laoreet justo. Fusce a efficitur lorem, at sagittis
+                                    libero.</div>
+                                <div class="card-icons"><i class="fa-solid fa-star"></i><i
+                                        class="fa-solid fa-eye"></i><i class="fa-solid fa-code-fork"></i></div>
                             </div>
                         </div>
                         <div class="card">
                             <div></div>
                             <div>
-                                <div>Heading</div>
-                                <div>Lorem</div>
-                                <div>Icons</div>
+                                <h4>Easy Peasy App</h4>
+                                <div>Fusce placerat metus vitae eleifend bibendum.</div>
+                                <div class="card-icons"><i class="fa-solid fa-star"></i><i
+                                        class="fa-solid fa-eye"></i><i class="fa-solid fa-code-fork"></i></div>
                             </div>
                         </div>
                         <div class="card">
                             <div></div>
                             <div>
-                                <div>Heading</div>
-                                <div>Lorem</div>
-                                <div>Icons</div>
+                                <h4>Ad Blocker</h4>
+                                <div>Quisque blandit lectus quis lorem faucibus euismod. In laoreet aliquet sapien
+                                    condimentum blandit. Integer aliquet, enim vitae malesuada commodo, nibh felis
+                                    finibus felis, vitae venenatis ipsum lacus at mi. Donec id dictum nibh. In vulputate
+                                    rhoncus nunc ac tincidunt. Aenean molestie nunc ut tellus mollis pellentesque.
+                                    Phasellus nisl ligula, imperdiet eget lectus sed, malesuada congue lectus.</div>
+                                <div class="card-icons"><i class="fa-solid fa-star"></i><i
+                                        class="fa-solid fa-eye"></i><i class="fa-solid fa-code-fork"></i></div>
                             </div>
                         </div>
                         <div class="card">
                             <div></div>
                             <div>
-                                <div>Heading</div>
-                                <div>Lorem</div>
-                                <div>Icons</div>
+                                <h4>Money Maker</h4>
+                                <div>Fusce vel mattis quam, auctor euismod nisi. Sed sed condimentum felis. Fusce
+                                    scelerisque arcu elit, sit amet sodales urna ullamcorper ut.</div>
+                                <div class="card-icons"><i class="fa-solid fa-star"></i><i
+                                        class="fa-solid fa-eye"></i><i class="fa-solid fa-code-fork"></i></div>
                             </div>
                         </div>
                     </div>
@@ -111,22 +134,22 @@
                         <h3>Announcements</h3>
                         <div class="announcements">
                             <div class="announcements-div">
-                                <h4>Site Maintenance</h4>
+                                <h5>Site Maintenance</h5>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id sem sed urna
                                     sagittis vehicula eu vel quam. Duis purus dui, sagittis sed sapien ac, tempus dictum
                                     purus.</p>
                                 <div class="line"></div>
                             </div>
                             <div class="announcements-div">
-                                <h4>Community Share Day</h4>
+                                <h5>Community Share Day</h5>
                                 <p>Maecenas nec enim vel enim molestie finibus eu eu odio. Praesent erat sem,
                                     consectetur nec ipsum ac, pellentesque laoreet dui. Aliquam ut dictum lacus, ac
                                     consectetur purus.</p>
                                 <div class="line"></div>
                             </div>
                             <div class="announcements-div">
-                                <h4>Updated Privacy Policy</h4>
-                                <p>ellentesque porttitor massa lectus, non elementum metus molestie quis. Ut vehicula
+                                <h5>Updated Privacy Policy</h5>
+                                <p>Ellentesque porttitor massa lectus, non elementum metus molestie quis. Ut vehicula
                                     eget turpis at lobortis. Pellentesque blandit ac nunc dapibus dapibus. Morbi aliquam
                                     metus vel tellus feugiat, nec tincidunt magna volutpat. </p>
                             </div>
@@ -136,28 +159,28 @@
                         <h3>Trending</h3>
                         <div class="trending">
                             <div class="trending-div">
-                                <div><img src="./cute-frog-image-free-vector.jpeg" alt="user-picture"></div>
+                                <div><img src="./1.jpeg" alt="user-picture"></div>
                                 <div class="trending-div-name">
                                     <span>@teagan</span>
                                     <span>World peace builder</span>
                                 </div>
                             </div>
                             <div class="trending-div">
-                                <div><img src="./cute-frog-image-free-vector.jpeg" alt="user-picture"></div>
+                                <div><img src="./2.jpeg" alt="user-picture"></div>
                                 <div class="trending-div-name">
                                     <span>@morgan</span>
                                     <span>Super Cool Project</span>
                                 </div>
                             </div>
                             <div class="trending-div">
-                                <div><img src="./cute-frog-image-free-vector.jpeg" alt="user-picture"></div>
+                                <div><img src="./3.jpeg" alt="user-picture"></div>
                                 <div class="trending-div-name">
                                     <span>@tkendall</span>
                                     <span>Life Changing App</span>
                                 </div>
                             </div>
                             <div class="trending-div">
-                                <div><img src="./cute-frog-image-free-vector.jpeg" alt="user-picture"></div>
+                                <div><img src="./4.jpeg" alt="user-picture"></div>
                                 <div class="trending-div-name">
                                     <span>@alex</span>
                                     <span>No Traffic Maker</span>
